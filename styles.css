@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    background-color: #111729;
+    color: #ecf0f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie-not-found{
+    display: none;
+}
+.header-body {
+    height: 623px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("hero-image-movie-search.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    justify-content: center;
+}
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 50px;
+    padding-top: 80px;
+    gap: 40px;
+}
+.card {
+    width: 789px;
+    height: 280px;
+    display: flex;
+    background-color: #111729;
+    border: 2px solid #20293A;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 24px;
+    gap: 24px;
+}
+.div-info-movie {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.div-info-main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.list-tags{
+    display: flex;
+    gap: 8px;
+}
+.search-movie {
+    position: absolute;
+    margin-top: 262px;
+    width: 50%;
+    z-index: 2;
+}
+.search-input {
+    background-image: url('Search_alt.svg');
+    background-repeat: no-repeat;
+    background-position: 28px center;
+    background-size: 20px;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    background-color: #20293A;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 28px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Outfit", sans-serif;
+    color: #a4adbb;
+}
+.title-movie {
+    font-size: 24px;
+}
+.plot-movie {
+    margin: 0;
+    color: #97A3B6;
+    font-size: 16px;
+}
+.div-poster-movie {
+    height: 100%;
+    display: flex;
+}
+.tag-genre {
+    background-color: #20293A;
+    color: #97A3B6;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.tag-info-movie {
+    color: #97A3B6;
+    font-size: 12px;
+}
+.value-info-movie {
+    color: #ecf0f6;
+    font-size: 12px;
+}
+.div-info-more {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.div-el-info-movie {
+    display: flex;
+}
+#poster-movie{
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+@media (max-width: 1024px) {
+    .header-body { 
+        background-size: cover;
+    }
+    .search-movie {
+        margin-top: 100px;
+    }
+    .card {
+        width: 90%;
+        display: inline-block;
+        height: 100%;
+    }
+    .div-poster-movie {
+        height: 300px;
+        width: auto;
+        justify-content: center;
+    }
+}

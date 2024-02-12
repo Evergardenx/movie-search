@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header-body">
+            <img src="OMDb-logo.svg">
+        </header>
+        <section class="search-movie">
+            <input class="search-input" type="text" placeholder="Search movie" >
+        </section>
+        <main>
+            <section class="card">
+                <div class="div-poster-movie">
+                    <img id="poster-movie">
+                </div>
+                <div class="div-info-movie">
+                    <div class="div-info-main">
+                        <span class="title-movie"></span>
+                        <div class="list-tags">
+                        </div>
+                        <div>
+                            <p class="plot-movie">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div-info-more">
+                        <div class="div-el-info-movie">
+                            <span class="tag-info-movie">Director:</span><span id="director-movie" class="value-info-movie"></span>
+                        </div>
+                        <div class="div-el-info-movie">
+                            <span class="tag-info-movie">Writers:</span><span id="writers-movie" class="value-info-movie"></span>
+                        </div>
+                        <div class="div-el-info-movie">
+                            <span class="tag-info-movie">Stars:</span><span id="stars-movie" class="value-info-movie"></span>
+                        </div>
+                        <div class="div-el-info-movie">
+                            <span class="tag-info-movie">IMDb Rating:<span id="rating-movie" class="value-info-movie"></span>(<span id="votes-movie">444.491</span> votes)</span >
+                        </div> 
+                    </div>
+                </div>
+                <div class="movie-not-found">Movie not found</div>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
